@@ -71,7 +71,8 @@ Allow deeper networks to learn effectively
 
 You tested your backbone with a sample tensor:
 
-'''bash
+
+```python
 
 x = torch.randn(1, 3, 640, 640)
 model = MyBackbone()
@@ -81,7 +82,8 @@ print(f3.shape)  # torch.Size([1, 128, 80, 80])
 print(f4.shape)  # torch.Size([1, 256, 40, 40])
 print(f5.shape)  # torch.Size([1, 512, 20, 20])
 
-'''
+```
+
 
 | Layer        | Learns About          | Example in Petri Dish                   |
 | ------------ | --------------------- | --------------------------------------- |
